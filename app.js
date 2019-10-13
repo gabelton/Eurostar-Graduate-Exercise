@@ -13,12 +13,16 @@ class App extends React.Component {
 
   componentDidMount() {
     axios.get('http://localhost:3000/api/todos')
-      .then(res => this.setState({todos: res.data}))
+      .then(res => this.setState({todos: res.data.sort((a,b) => (a.id < b.id) ? 1 : -1)}))
   }
   render() {
     console.log(this.state)
     return (
-      <h1>Hello World!</h1>
+      <div>
+        <h1>Hello World!</h1>
+
+        {this.state.todos.map(todo => <li key={todo.id}>{todo.title}</li>)}
+      </div>
     )
   }
 }
