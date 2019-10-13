@@ -1,0 +1,40 @@
+* {
+  font-family: "Helvetica";
+}
+div {
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  width: 40%;
+
+}
+
+li {
+  padding: 10px 0;
+  margin: 10px auto;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  display: inline-block;
+}
+svg {
+  display: inline-block;
+}
+
+.complete, .incomplete {
+  border-bottom: 1px solid grey;
+  width: 100%;
+}
+
+// .complete {
+//   background-color: green;
+// }
+//
+// .incomplete {
+//   background-color: red;
+// }
+
+#root {
+  border-width: 0.5px;
+  border-style: solid;
+}
