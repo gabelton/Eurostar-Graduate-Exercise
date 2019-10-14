@@ -37,7 +37,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state)
     if (this.state.todos.length === 0) return <h1>Loading...</h1>
     return (
       <div>
@@ -57,7 +56,7 @@ class App extends React.Component {
             {(todo.completed ? <GoCheck /> : <GoX /> )}
           </div>
         )}
-
+        
       </div>
     )
   }
