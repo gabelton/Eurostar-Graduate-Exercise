@@ -1,29 +1,12 @@
-# Graduate Exercise
+# Eurostar Graduate Exercise
 
 ## Setup
 
-Requirements:
-- git (https://help.github.com/en/articles/set-up-git)
-- node/npm (https://nodejs.org/en/download/)
-- github account (https://github.com)
+1. Clone or download the repository
+2. Run 'npm i' in the CLI
+2. Run 'npm run dev'
+3. In another tab run 'npm run serve'
 
-You should clone this repository and run `npm install` from the correct directory within your terminal. Once all of the files are installed, you should be able to run `npm run dev` - you should see the following:
+## Comments
 
-`🚄 Server running @ http://localhost:3000`
-
-If you open your browser and point it to that URL, you should see a blank HMTL.
-
-## Tasks
-
-Now that you’re setup, you will need to complete a few tasks - the core functionality of the application is to display information around _todo_ tasks. It is required to complete the following tasks using React.js.
-
-Whilst you have been provided with a blank HTML page which loads a CSS and Javascript file, you are able to change all parts of the existing code, as long as we complete the following tasks:
-
-- Load and display the _todo_ items `title` from http://localhost:3000/api/todos ordering them on their ID in descending order
-- Display the total number of _todo_ items
-- Display the completed number of _todo_ items
-- Add styling
-
-## Submission
-
-Once you have completed the task, we ask that you create a github repository and send it over to us for review.
+I was slightly confused by the third task ('Display the completed number of todo items'). I was unsure whether it was the number value (i.e. 90) that was wanted or the total 90 titles displayed on the page. I did both and then added the option to see the incomplete tasks too, since the functionality was already there.

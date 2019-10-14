@@ -23,18 +23,19 @@ class App extends React.Component {
       .then(res => this.setState({
         todos: res.data.sort((a,b) => (a.id < b.id) ? 1 : -1),
         completed: res.data.filter(todo => todo.completed)
-      }))
+      })
+      )
   }
 
   handleClick(e) {
-
     this.setState({
       showAll: false,
       showCompleted: false,
       showIncomplete: false,
-      [e.target.value]: true})
-    console.log(this.state)
+      [e.target.value]: true
+    })
   }
+
   render() {
     console.log(this.state)
     if (this.state.todos.length === 0) return <h1>Loading...</h1>
